@@ -135,6 +135,16 @@ sans-serif;
     background-repeat: no-repeat;
     background-size: cover;
 }
+.slide-outem {
+    background-image: url(../img/outem.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slide-vitamins {
+    background-image: url(../img/vitamins.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .slide::before{
     content: "";
     position: absolute;
@@ -308,12 +318,14 @@ h2.section-title{
 .tabs-content{
     display: flex;
     justify-content: space-between;
+    margin: -15px;
 }
 .tabs-card{
     max-width: 270px;
     border-radius: 20px;
     overflow: hidden;
     background: #fff;
+    margin: 15px;
 }
 .tabs-image{
     max-width: 100%;
@@ -428,4 +440,121 @@ h2.section-title{
 .social-link{
     margin-left: 20px;
     text-decoration: none;
+}
+.slider-buttons{
+    position: absolute;
+    bottom: 40px;
+    right: 46px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    width: 100px;
+    justify-content: space-between;
+}
+.slider-button{
+    cursor: pointer;
+}
+.swiper{
+    position: relative;
+}
+
+@media screen and (max-width: 1300px) {
+    .container{
+        width: 960px;
+    }
+    .search-form {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .tabs-content{
+        flex-wrap: wrap;
+    }
+    .tabs-card{
+        flex: 50%;
+        max-width: calc(50% - 30px);
+    }
+    .benefits-cards{
+        flex-wrap: wrap;
+    }
+    .benefits-card{
+        max-width: calc(50% - 30px);
+        margin-bottom: 50px;
+        padding: 45px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .container {
+        max-width: 750px;
+    }
+    .slide{
+        padding-left: 60px;
+    }
+    .delivery-card{
+        width: calc(50% - 30px);
+    }
+    .footer-logo{
+        margin-right: 40px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .container{
+        max-width: 560px;
+    }
+    .header{
+        flex-wrap: wrap;
+    }
+    .search-form{
+        order: 5;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    .promo{
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 576px) {
+    .container{
+        max-width: 90%;
+    }
+    .tabs-card{
+        max-width: 100%;
+    }
+    .benefits-card{
+        max-width: 100%;
+    }
+    .footer-wrapper{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+     .social-links {
+         margin: 10px auto;
+     }
+     nav.footer-nav {
+         margin: 15 px auto;
+     }
+}
+@media screen and (max-width: 400px) {
+    .slide {
+        padding-left: 30px;
+    }
+   .slider-buttons {
+       bottom: 5px;
+       right: 15px;
+   }
+   .tabs {
+       flex-wrap: wrap;
+       margin-bottom: 30px;
+   }
+   li.tabs-item {
+       margin: 15px;
+   }
+}
+@media screen and (max-width: 320px) {
+    .button-center {
+        width: 215px;
+    }
 }
